@@ -2,7 +2,6 @@
   (compound_statement)
   (field_declaration_list)
   (case_statement)
-  (enumerator_list)
   (compound_literal_expression)
   (initializer_list)
   (init_declarator)
@@ -54,11 +53,6 @@
       (compound_statement)? @indent.dedent
       (_)? @indent.dedent
     ])?) @indent.begin
-
-(else_clause
-  (_
-    .
-    "{" @indent.branch))
 
 (compound_statement
   "}" @indent.end)
