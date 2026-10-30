@@ -1,4 +1,4 @@
-## If you're using NeoVim
+## If you're using NeoVim and Treesitter
 
 Add this somewhere before your treesitter setup. You may now install with "TSInstall nwscript"
 
