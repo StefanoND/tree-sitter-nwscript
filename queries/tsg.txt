@@ -1,4 +1,3 @@
-
 (preproc_include file: (_) @include)
 {
     node @include.source
@@ -6,7 +5,7 @@
     edge @include.source -> @include.sink
     attr (@include.source) kind = "include"
     attr (@include.source -> @include.sink) precedence = 10
-    
+
 }
 
 (nwn_type) @nwn
@@ -19,4 +18,19 @@
 {
     node @number.node
     attr(@number.node) kind = "number"
+}
+
+(string_literal) @string
+{
+    node @string.node
+    attr(@string.node) kind = "string"
+}
+
+(vector_specifier
+  "["
+  "]"
+) @container
+{
+    node @vector_specifier.node
+    attr (@vector_specifier.node) kind = "vector specifier"
 }
