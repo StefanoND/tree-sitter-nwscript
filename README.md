@@ -1,3 +1,5 @@
+## If you're using NeoVim:
+
 Add this somewhere before your treesitter setup. You may now install with "TSInstall nwscript"
 
 ```C++
